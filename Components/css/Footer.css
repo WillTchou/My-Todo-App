@@ -1,0 +1,37 @@
+.footer-taches{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background-color:hsl(235, 24%, 19%);
+    padding:20px;
+    width:36%;
+    border-radius: 5px;
+    margin-left: 31%;
+    font-size: 13px;
+
+}
+
+.footer-taches #all{
+    color: hsl(220, 98%, 61%);
+}
+
+.footer-taches .place{
+    color: grey;
+}
+
+.footer-taches .place:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.footer-taches .options{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top:0px;
+    margin-right: 20px;
+}
+
+.footer-taches .options li{
+    padding-right: 8px;
+}
