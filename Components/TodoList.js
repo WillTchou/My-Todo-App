@@ -37,6 +37,13 @@ const TodoList =()=>{
         console.log(taches);
     }
 
+    const completeAll=()=>{
+        setTache(
+            taches.map((tache)=>
+                tache.completed===false ? {...tache,completed:true} :tache)
+        );
+    }
+
     
     return (
             <div className="TodoList">
@@ -53,7 +60,7 @@ const TodoList =()=>{
                                 />
                             ))}   
                         </ul>
-                        <Footer taches={taches}/>  
+                        <Footer taches={taches} completeAll={completeAll}/>  
                 </div>:
                 <div className="vide">
                     <span>You have any task to do</span>

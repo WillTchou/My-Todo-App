@@ -9,8 +9,8 @@ const Footer = (props) => {
         return tachesLeft.length;
     }
     
-    const clearAll=(taches)=>{
-        taches.map((tache)=>tache.completed=true);
+    const clearAll=()=>{
+        props.completeAll();
     }
 
     return (
@@ -33,7 +33,8 @@ const Footer = (props) => {
 };
 
 Footer.propTypes={
-    taches:PropTypes.array.isRequired
+    taches:PropTypes.array.isRequired,
+    completeAll:PropTypes.func.isRequired
 }
 
 export default Footer;
